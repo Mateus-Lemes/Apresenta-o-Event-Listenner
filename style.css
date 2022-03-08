@@ -1,0 +1,52 @@
+body {
+    background-color: cadetblue;
+}
+
+h1 {
+    display: flex;
+    font-size: 40px;
+    justify-content: center;
+    font-weight: 700;
+}
+
+ul {
+    margin-left: 15px;
+}
+
+li {
+    font-style: italic;
+    font-size: 20px;
+    margin: 50px 0 15px 0;
+    font-weight: 600;
+}
+
+span {
+    font-weight: bold;
+}
+
+ul p {
+    margin-bottom: 5px;
+}
+
+.explication {
+    background-color: #f0f0f0;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    width: 65%;
+    line-height: 20px;
+    margin-bottom: 20px;
+    padding: 10px 10px 0 10px;
+}
+h2 {
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+.diferenças {
+    display: flex;
+}
+
+.diferenças div {
+    width: 300px;
+}

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Event Listener</title>
+</head>
+<body>
+    <h1>Event Listener</h1>
+
+    <section>
+        <ul>
+            <li>O que é um Event Listener e como adicioná-lo via JS?</li>
+            <div class="explication"><p>É basicamente um conjunto de ações que são realizadas em um determinado
+                elemento da página web, seja ele um texto, uma imagem, ou uma div, por exemplo.
+                Muitas das interações do usuário que está visitando sua página com o conteúdo do
+                seu site podem ser consideradas eventos.</p>
+            </div>
+            <h2>Para adicionar a sua aplicação web utlizamos da sintaxe element.addEventListener(event, function,useCapture)</h2>
+
+            <li>Qual a diferença de um Event Listener de atributos HTML (como onclick)?</li>
+            <div class="diferenças">
+                <div>
+                    <h2 style="font-weight: bold;">addEventListener</h2>
+
+                    <p>addEventListener pode adicionar vários eventos a um elemento específico.</p>
+                    <p>addEventListener pode receber um terceiro argumento que pode controlar a propagação do evento.</p>
+                    <p>addEventListener só pode ser adicionado dentro de elementos script ou em arquivo JavaScript externo.</p>
+                    <p>addEventListener não funciona em versões anteriores do Internet explorer, que usa attachEvent.</p>
+                </div>
+                <div>
+                    <h2 style="font-weight: bold;">Atributos</h2>
+                    <p>Atributo pode adicionar apenas um único evento a um elemento.</p>
+                    <p>A propagação de eventos não pode ser controlada por atributo.</p>
+                    <p>Atributo pode ser adicionado pelo HTML ou pelo JavaScript. </p>
+                    <p>onclick funciona em todos os navegadores.</p>
+                </div>
+            </div>
+
+            <li> O que são eventos de mouse e teclado em JavaScript?</li>
+            <div class="explication"><p>Nada mais é do que eventos que ocorrem quando alguma ação é feita com o mouse ou teclado, seja ela clicar, passar por cima, pressionar uma tecla ou algo semelhante a isso. </p>
+            </div>
+            
+            <h2>Exemplos mais utilizados de eventos de mouse e teclado:</h2>
+            <p><span>onBlur:</span> remove o foco do elemento</p>
+            <p><span>onChange:</span> muda o valor do elemento</p> 
+            <p><span>onClick:</span> o elemento é clicado pelo usuário</p>
+            <p><span>onFocus:</span> o elemento é focado</p>
+            <p><span>onKeyPress:</span> o usuário pressiona uma tecla sobre o elemento</p>
+            <p><span>onLoad:</span> carrega o elemento por completo</p>
+            <p><span>onMouseOver:</span> define ação quando o usuário passa o mouse sobre o elemento</p>
+            <p><span>onMouseOut:</span> define ação quando o usuário retira o mouse sobre o elemento</p>
+            <p><span>onSubmit:</span> define ação ao enviar um formulário</p>
+            <button onclick="this.innerHTML='Isso acontece quando usamos o evento onClick!'">Click aqui para testar o evento onClick</button>
+            
+            <li>O que é uma função de callback (utilizada no Event Listener)?</li>
+            <div class="explication"><p>A forma de utilização é parecida com a que já conhecemos. O segundo argumento da sintaxe recebe o que deve acontecer depois que o evento esperado (primeiro argumento) é recebido
+                Nesse caso, o que deve acontecer será uma function, onde ela só vai ser chamada quando o evento também for chamado, ou seja, um callback.</p>
+            </div>
+
+            <li>O que é o objeto `Event` que é recebido na função de callback?</li>
+            <div class="explication"><p></p>
+            </div>
+            <li>O que é Event Bubbling em JS?</li>
+            <div class="explication"><p>O Event bubbling ocorre quando um usuário interage com um elemento no HTML e
+                 o evento se propaga como “bolhas” por todos os elementos que estão aninhados a ele. Quando um evento “bubbling” 
+                 é realizado sobre um determinado elemento, todos os ancestrais dele 
+                 também serão acionados em ordem crescente de aninhamento até chegar ao último elemento</p>
+            </div>
+            <li>O que faz a função `event.stopPropagation`?</li>
+            <div class="explication"><p>Caso você queira parar antes que ele chegue no ultimo elemento como vimos no ultimo item nós utilizamos o event.stopPropagation como 3º argumento do Event Listener e ele irá parar </p>
+           </div>
+        </ul>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
